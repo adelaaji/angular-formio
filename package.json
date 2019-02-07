@@ -14,7 +14,8 @@
     "demo": "gulp build && concurrently --raw \"webpack-dev-server --open\" \"npm run test:watch\"",
     "publish": "gulp build && gulp package-version && npm publish dist",
     "test": "tsc && karma start",
-    "test:watch": "karma start --auto-watch"
+    "test:watch": "karma start --auto-watch",
+    "install": "npm run build"
   },
   "repository": {
     "type": "git",
